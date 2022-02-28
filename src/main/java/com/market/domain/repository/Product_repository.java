@@ -9,7 +9,7 @@ public interface Product_repository {
     List<Product_map> getAll();
     Optional<List<Product_map>> getByCategory(int categoryID);
     Optional<List<Product_map>> getScarseProducts(int quantity);
-    Optional<List<Product_map>> getProduct(int productID);
+    Optional<Product_map> getProduct(int productID);
     Product_map save (Product_map productMapp);
     void delete (int productID);
 }
