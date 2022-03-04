@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Repository
 public class Product_repository implements com.market.domain.repository.Product_repository {
-   @Autowired //dependency inyections, only spring components
+   @Autowired //dependency injections, only spring components
    private Product_crud_repository pcr;
    @Autowired
    private Product_mapper mapper;

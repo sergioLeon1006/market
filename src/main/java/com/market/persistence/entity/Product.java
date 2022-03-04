@@ -1,6 +1,7 @@
 package com.market.persistence.entity;
 
 import lombok.Data;
+
 import javax.persistence.*;
 
 @Data
@@ -25,13 +26,13 @@ public class Product {
     @Column(name = "precio_venta")
     private Double price;
 
-    @Column(name = "cantidad_stok")
+    @Column(name = "cantidad_stock")
     private Integer amount;
 
     @Column(name = "estado")
     private Boolean status;
 
     @ManyToOne
-    @JoinColumn(name = "id_categoria",insertable = false,updatable = false)
+    @JoinColumn(name = "id_categoria", insertable = false,updatable = false)
     private Category category;
 }
