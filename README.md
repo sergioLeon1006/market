@@ -1,4 +1,4 @@
 # market
 small market
 
-Srping Boot,Lombok,mapStruct
+Srping Boot, Lombok, mapStruct and swagger.
